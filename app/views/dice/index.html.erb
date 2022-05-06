@@ -1,0 +1,34 @@
+<%
+    die1 = rand(1..6)
+    die2 = rand(1..6)
+    total = die1 + die2
+%>
+<h1>Roll the dice!!!</h1>
+<p>
+<% 
+case die1 
+when 1 %> <img src="/images/dice/1.svg">
+<%when 2%><img src="/images/dice/2.svg">
+<%when 3%><img src="/images/dice/3.svg">
+<%when 4%><img src="/images/dice/4.svg">
+<%when 5%><img src="/images/dice/5.svg">
+<%when 6%><img src="/images/dice/6.svg">
+<% end%>
+<% 
+case die2 
+when 1 %> <img src="/images/dice/1.svg">
+<%when 2%><img src="/images/dice/2.svg">
+<%when 3%><img src="/images/dice/3.svg">
+<%when 4%><img src="/images/dice/4.svg">
+<%when 5%><img src="/images/dice/5.svg">
+<%when 6%><img src="/images/dice/6.svg">
+<% end%>
+</p>
+
+<p>
+My total is <%= die1 + die2 %>
+</p>
+
+<p>
+    <a href="/dice">Roll Again</a>
+</p>
